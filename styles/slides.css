@@ -18,39 +18,33 @@
   color: var(--red); text-transform: uppercase; margin-bottom: 20px;
 }
 .s-cover h1 {
-  font-size: clamp(51.9px, 7vw, 85px); font-weight: 900;
+  font-size: clamp(52px, 7vw, 85px); font-weight: 900;
   color: var(--black); line-height: 1; margin-bottom: 8px;
 }
 .s-cover h1 .dot { color: var(--red); }
 .s-cover .subtitle {
-  font-size: clamp(18.9px, 2vw, 28.3px); font-weight: 700;
+  font-size: clamp(19px, 2vw, 28px); font-weight: 700;
   color: #333; margin-bottom: 20px;
 }
 .s-cover .slogan {
-  font-size: clamp(14.2px, 1.4vw, 18.9px); color: var(--gray-500);
+  font-size: clamp(14px, 1.4vw, 19px); color: var(--gray-500);
   font-style: italic; margin-bottom: 36px;
 }
-.s-cover .meta {
-  display: flex; align-items: center; gap: 12px;
-}
-.s-cover .meta span {
-  font-size: 14.3px; color: var(--gray-500);
-}
-.s-cover .meta .dot-sep {
-  width: 5px; height: 5px; border-radius: 50%; background: var(--red);
-}
+.s-cover .meta { display: flex; align-items: center; gap: 12px; }
+.s-cover .meta span { font-size: 14px; color: var(--gray-500); }
+.s-cover .meta .dot-sep { width: 5px; height: 5px; border-radius: 50%; background: var(--red); }
 
 /* ============================================================
    SLIDE 2 — What is Enter.pro
    ============================================================ */
 .s-what .left {
-  width: 38%; background: #1e2538;
+  width: 38%; background: #0d0d0d;   /* ← 黑色，非蓝色 */
   border-right: none; flex-shrink: 0;
 }
-.s-what .left h2 { font-size: clamp(30.7px, 3.5vw, 47.2px); font-weight: 900; color: #fff; margin-bottom: 16px; line-height: 1.1; }
-.s-what .left .slogan { font-size: 15.6px; color: var(--gray-500); font-style: italic; line-height: 1.6; }
+.s-what .left h2 { font-size: clamp(31px, 3.5vw, 47px); font-weight: 900; color: #fff; margin-bottom: 16px; line-height: 1.1; }
+.s-what .left .slogan { font-size: 15px; color: var(--gray-500); font-style: italic; line-height: 1.6; }
 .s-what .right { background: var(--white); }
-.s-what .intro-text { font-size: 16.9px; color: var(--gray-700); line-height: 1.75; margin-bottom: 24px; }
+.s-what .intro-text { font-size: 16px; color: var(--gray-700); line-height: 1.75; margin-bottom: 24px; }
 .s-what .intro-text strong { color: var(--black); }
 .s-what .links { display: flex; flex-wrap: wrap; gap: 8px; }
 .s-what .link-item {
@@ -58,7 +52,7 @@
   background: var(--gray-50); border-radius: 6px; padding: 7px 12px;
   font-size: 13px; color: var(--gray-700); font-weight: 600;
 }
-.s-what .link-item .li-icon { font-size: 16.9px; }
+.s-what .link-item .li-icon { font-size: 16px; }
 
 /* ============================================================
    SLIDE 3 — Target & Philosophy
@@ -70,15 +64,15 @@
 }
 .s-audience .inner {
   position: absolute; inset: 4px 0 0 0;
-  display: flex; padding: 64px 56px 32px; gap: 48px;
+  display: flex; padding: 72px 56px 80px; gap: 48px;
 }
 .s-audience .left-title { width: 200px; flex-shrink: 0; }
-.s-audience .left-title h2 { font-size: clamp(28.3px, 3vw, 42.5px); font-weight: 900; color: var(--black); line-height: 1.1; margin-bottom: 12px; }
-.s-audience .left-title p { font-size: 14.3px; color: var(--gray-500); line-height: 1.7; }
-.s-audience .items { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 14px; }
+.s-audience .left-title h2 { font-size: clamp(28px, 3vw, 42px); font-weight: 900; color: var(--black); line-height: 1.1; margin-bottom: 12px; }
+.s-audience .left-title p { font-size: 14px; color: var(--gray-500); line-height: 1.7; }
+.s-audience .items { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 20px; }
 .s-audience .item { display: flex; gap: 14px; align-items: flex-start; }
-.s-audience .item-body h4 { font-size: 16.9px; font-weight: 700; color: var(--black); margin-bottom: 4px; }
-.s-audience .item-body p { font-size: 13.7px; color: var(--gray-500); line-height: 1.6; }
+.s-audience .item-body h4 { font-size: 17px; font-weight: 700; color: var(--black); margin-bottom: 6px; }
+.s-audience .item-body p { font-size: 15px; color: var(--gray-500); line-height: 1.65; }
 .s-audience .item-body p .acc { color: var(--red); font-weight: 700; }
 
 /* ============================================================
@@ -87,330 +81,323 @@
 .s-quickstart { background: var(--gray-50); }
 .s-quickstart .inner {
   position: absolute; inset: 0;
-  display: flex; flex-direction: column; padding: 64px 44px 76px;
+  display: flex; flex-direction: column; padding: 72px 44px 80px;
 }
 .s-quickstart .header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; }
-.s-quickstart .header h2 { font-size: clamp(23.6px, 2.5vw, 33px); font-weight: 900; color: var(--black); }
+.s-quickstart .header h2 { font-size: clamp(24px, 2.5vw, 33px); font-weight: 900; color: var(--black); }
 .s-quickstart .steps { flex: 1; display: flex; gap: 12px; align-items: stretch; }
 .s-quickstart .step {
   flex: 1; background: var(--white); border-radius: 10px; padding: 20px 16px;
   display: flex; flex-direction: column;
 }
 .s-quickstart .step.dark { background: #fff5f5; border: 1.5px solid rgba(232,52,78,0.2); }
-.s-quickstart .step-num { font-size: 11.7px; font-weight: 700; color: var(--red); letter-spacing: 1.5px; margin-bottom: 10px; }
-.s-quickstart .step-icon { font-size: 26.9px; margin-bottom: 10px; }
-.s-quickstart .step h3 { font-size: 16.9px; font-weight: 900; color: var(--black); margin-bottom: 6px; }
+.s-quickstart .step-num { font-size: 12px; font-weight: 700; color: var(--red); letter-spacing: 1.5px; margin-bottom: 10px; }
+.s-quickstart .step-icon { font-size: 28px; margin-bottom: 10px; }
+.s-quickstart .step h3 { font-size: 17px; font-weight: 900; color: var(--black); margin-bottom: 8px; }
 .s-quickstart .step.dark h3 { color: var(--red); }
-.s-quickstart .step p { font-size: 12.3px; color: var(--gray-500); line-height: 1.55; }
-.s-quickstart .step-tag { margin-top: auto; padding-top: 10px; font-size: 11.1px; color: var(--red); font-weight: 700; }
-.s-quickstart .arrow { display: flex; align-items: center; color: var(--gray-300); font-size: 23.4px; padding-top: 20px; }
+.s-quickstart .step p { font-size: 14px; color: var(--gray-500); line-height: 1.6; }
+.s-quickstart .step-tag { margin-top: auto; padding-top: 10px; font-size: 12px; color: var(--red); font-weight: 700; }
+.s-quickstart .arrow { display: flex; align-items: center; color: var(--gray-300); font-size: 24px; padding-top: 20px; }
 
 /* ============================================================
    SLIDE 5 — Three Creation Modes
    ============================================================ */
-.s-modes .left { width: 36%; background: #1e2538; flex-shrink: 0; }
-.s-modes .left h2 { font-size: clamp(28.3px, 3.2vw, 44.8px); font-weight: 900; color: #fff; margin-bottom: 14px; }
-.s-modes .left p { font-size: 14.3px; color: var(--gray-500); line-height: 1.65; }
+.s-modes .left { width: 36%; background: #0d0d0d; flex-shrink: 0; }   /* ← 黑色 */
+.s-modes .left h2 { font-size: clamp(28px, 3.2vw, 45px); font-weight: 900; color: #fff; margin-bottom: 14px; }
+.s-modes .left p { font-size: 14px; color: var(--gray-500); line-height: 1.65; }
 .s-modes .left p .acc { color: var(--red); font-weight: 700; }
 .s-modes .right { background: var(--white); gap: 12px; display: flex; flex-direction: column; justify-content: center; }
 .s-modes .mode-card {
   display: flex; align-items: flex-start; gap: 14px;
-  background: var(--gray-50); border-radius: 8px; padding: 14px 16px;
+  background: var(--gray-50); border-radius: 8px; padding: 16px 18px;
 }
 .s-modes .mode-card.featured { background: #fff0f2; border-left: 3px solid var(--red); }
-.s-modes .mode-body h4 { font-size: 15.6px; font-weight: 700; color: var(--black); margin-bottom: 4px; }
-.s-modes .mode-body p { font-size: 12.3px; color: var(--gray-500); line-height: 1.5; }
-.s-modes .mode-example { font-size: 11.1px; color: var(--red); font-style: italic; margin-top: 4px; }
+.s-modes .mode-body h4 { font-size: 16px; font-weight: 700; color: var(--black); margin-bottom: 6px; }
+.s-modes .mode-body p { font-size: 14px; color: var(--gray-500); line-height: 1.6; }
+.s-modes .mode-example { font-size: 12px; color: var(--red); font-style: italic; margin-top: 6px; }
 
 /* ============================================================
    SLIDE 6 — Plan Mode
    ============================================================ */
 .s-plan { background: var(--white); }
 .s-plan .top-accent { position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--red); }
-.s-plan .inner { position: absolute; inset: 4px 0 0 0; display: flex; padding: 60px 52px 76px; gap: 44px; }
+.s-plan .inner { position: absolute; inset: 4px 0 0 0; display: flex; padding: 72px 52px 80px; gap: 44px; }
 .s-plan .left { width: 210px; flex-shrink: 0; display: flex; flex-direction: column; justify-content: center; }
 .s-plan .left .badge {
   display: inline-block; background: var(--red); border-radius: 4px;
   padding: 3px 9px; margin-bottom: 14px;
-  font-size: 10.4px; color: #fff; font-weight: 700; text-transform: uppercase;
+  font-size: 11px; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 0.5px;
 }
-.s-plan .left h2 { font-size: clamp(30.7px, 3.5vw, 47.2px); font-weight: 900; color: var(--black); line-height: 1.05; margin-bottom: 14px; }
-.s-plan .left p { font-size: 13.7px; color: var(--gray-500); line-height: 1.65; }
+.s-plan .left h2 { font-size: clamp(31px, 3.5vw, 47px); font-weight: 900; color: var(--black); line-height: 1.05; margin-bottom: 14px; }
+.s-plan .left p { font-size: 15px; color: var(--gray-500); line-height: 1.7; }
 .s-plan .right { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+.s-plan .divider { height: 1px; background: var(--gray-100); }
 .s-plan .feat { display: flex; align-items: flex-start; gap: 12px; }
-.s-plan .feat-icon { font-size: 20.8px; padding-top: 2px; }
-.s-plan .feat-body h4 { font-size: 15.6px; font-weight: 700; color: var(--black); margin-bottom: 3px; }
-.s-plan .feat-body p { font-size: 13px; color: var(--gray-500); line-height: 1.55; }
+.s-plan .feat-icon { font-size: 22px; padding-top: 2px; }
+.s-plan .feat-body h4 { font-size: 17px; font-weight: 700; color: var(--black); margin-bottom: 5px; }
+.s-plan .feat-body p { font-size: 14px; color: var(--gray-500); line-height: 1.65; }
 .s-plan .feat-body p strong { color: var(--black); }
 .s-plan .tip {
   background: #fff4f5; border-left: 3px solid var(--red);
   border-radius: 0 6px 6px 0; padding: 10px 14px;
-  font-size: 12.3px; color: var(--gray-500); line-height: 1.5;
+  font-size: 13px; color: var(--gray-500); line-height: 1.55;
 }
 .s-plan .tip strong { color: var(--red); }
 
 /* ============================================================
-   SLIDE 7 — Enter MaaS  (白色主调)
+   SLIDE 7 — Enter MaaS
    ============================================================ */
 .s-maas { background: var(--white); }
-.s-maas .inner { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 72px 52px 76px; }
+.s-maas .inner { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 72px 52px 80px; }
 .s-maas .header { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; border-bottom: 1px solid var(--gray-100); padding-bottom: 18px; }
-.s-maas .header h2 { font-size: clamp(26px, 2.6vw, 35.4px); font-weight: 900; color: var(--black); }
+.s-maas .header h2 { font-size: clamp(26px, 2.6vw, 35px); font-weight: 900; color: var(--black); }
 .s-maas .header h2 .acc { color: var(--red); }
 .s-maas .header .new-badge {
   background: var(--red); border-radius: 4px; padding: 3px 10px;
-  font-size: 11.7px; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 0.5px;
+  font-size: 12px; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 0.5px;
 }
-.s-maas .header .sub { margin-left: auto; font-size: 13px; color: var(--gray-500); }
+.s-maas .header .sub { margin-left: auto; font-size: 14px; color: var(--gray-500); }
 .s-maas .body { flex: 1; display: flex; gap: 28px; min-height: 0; }
 .s-maas .intro { width: 220px; flex-shrink: 0; display: flex; flex-direction: column; gap: 12px; }
-.s-maas .intro > p { font-size: 13px; color: var(--gray-500); line-height: 1.7; }
+.s-maas .intro > p { font-size: 14px; color: var(--gray-500); line-height: 1.7; }
 .s-maas .new-feat {
   background: var(--gray-50); border-left: 2px solid var(--red);
   border-radius: 0 6px 6px 0; padding: 10px 13px;
 }
-.s-maas .new-feat h5 { font-size: 13px; font-weight: 700; color: var(--black); margin-bottom: 4px; }
-.s-maas .new-feat p { font-size: 11.7px; color: var(--gray-500); line-height: 1.5; }
+.s-maas .new-feat h5 { font-size: 14px; font-weight: 700; color: var(--black); margin-bottom: 4px; }
+.s-maas .new-feat p { font-size: 13px; color: var(--gray-500); line-height: 1.55; }
 .s-maas .models { flex: 1; display: flex; flex-direction: column; gap: 10px; min-height: 0; }
-.s-maas .cat-label { font-size: 11.7px; color: var(--red); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; }
+.s-maas .cat-label { font-size: 12px; color: var(--red); font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 6px; }
 .s-maas .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .s-maas .mchip {
-  background: var(--gray-50); border: 1px solid var(--gray-100); border-radius: 6px;
-  padding: 7px 12px;
+  background: var(--gray-50); border: 1px solid var(--gray-100); border-radius: 6px; padding: 7px 12px;
 }
 .s-maas .mchip.hot { border-color: rgba(232,52,78,0.25); background: #fff5f5; }
 .s-maas .mchip h5 { font-size: 13px; font-weight: 700; color: var(--black); margin-bottom: 2px; }
 .s-maas .mchip.hot h5 { color: var(--red); }
-.s-maas .mchip p { font-size: 11.1px; color: var(--gray-500); }
+.s-maas .mchip p { font-size: 12px; color: var(--gray-500); }
 
 /* ============================================================
-   SLIDE 8 — Skills & MCP  (白色主调)
+   SLIDE 8 — Skills & MCP
    ============================================================ */
 .s-skills { background: var(--white); }
 .s-skills .top-bar { position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--red); }
-.s-skills .inner { position: absolute; inset: 3px 0 0 0; display: flex; flex-direction: column; padding: 64px 48px 76px; }
+.s-skills .inner { position: absolute; inset: 3px 0 0 0; display: flex; flex-direction: column; padding: 72px 48px 80px; }
 .s-skills .header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; border-bottom: 1px solid var(--gray-100); padding-bottom: 16px; }
 .s-skills .header h2 { font-size: clamp(20px, 2.4vw, 26px); font-weight: 900; color: var(--black); }
-.s-skills .header .section-label { color: var(--gray-500); margin: 0; }
 .s-skills .cols { flex: 1; display: flex; gap: 16px; min-height: 0; }
-.s-skills .col { flex: 1; border-radius: 12px; padding: 20px 22px; display: flex; flex-direction: column; border: 1px solid var(--gray-100); }
-.s-skills .col.dark { background: var(--gray-50); }
-.s-skills .col.white { background: var(--gray-50); }
+.s-skills .col { flex: 1; border-radius: 12px; padding: 20px 22px; display: flex; flex-direction: column; border: 1px solid var(--gray-100); background: var(--gray-50); }
 .s-skills .col-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
 .s-skills .col-head h3 { font-size: 15px; font-weight: 900; color: var(--black); }
-.s-skills .col.white .col-head h3 { color: var(--black); }
 .s-skills .col-head .new-tag {
-  background: var(--red); color: #fff; border-radius: 4px;
-  padding: 2px 7px; font-size: 8px; font-weight: 700;
+  background: var(--red); color: #fff; border-radius: 4px; padding: 2px 7px; font-size: 9px; font-weight: 700;
 }
-.s-skills .col p.intro { font-size: 10px; color: var(--gray-500); line-height: 1.65; margin-bottom: 14px; }
-.s-skills .col.white p.intro { color: var(--gray-500); }
+.s-skills .col p.intro { font-size: 13px; color: var(--gray-500); line-height: 1.65; margin-bottom: 14px; }
 .s-skills .skill-item { background: var(--white); border: 1px solid var(--gray-100); border-radius: 6px; padding: 10px 12px; margin-bottom: 8px; }
 .s-skills .skill-item.featured { border-left: 2px solid var(--red); background: #fff9f9; }
-.s-skills .skill-item h5 { font-size: 10px; font-weight: 700; color: var(--black); margin-bottom: 3px; }
+.s-skills .skill-item h5 { font-size: 13px; font-weight: 700; color: var(--black); margin-bottom: 3px; }
 .s-skills .skill-item.featured h5 { color: var(--red); }
-.s-skills .skill-item p { font-size: 9px; color: var(--gray-500); line-height: 1.45; }
+.s-skills .skill-item p { font-size: 12px; color: var(--gray-500); line-height: 1.5; }
 .s-skills .mcp-step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; }
-.s-skills .mcp-step .num-badge { background: var(--black) !important; color: #fff !important; font-size: 9px; flex-shrink: 0; }
-.s-skills .mcp-step p { font-size: 10px; color: var(--gray-700); line-height: 1.5; padding-top: 1px; }
+.s-skills .mcp-step .num-badge { background: var(--black) !important; color: #fff !important; font-size: 10px; flex-shrink: 0; }
+.s-skills .mcp-step p { font-size: 13px; color: var(--gray-700); line-height: 1.5; padding-top: 1px; }
 .s-skills .svc-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
-.s-skills .svc-chips .chip { background: var(--gray-100); color: var(--gray-700); border: 1px solid var(--gray-100); border-radius: 20px; padding: 3px 10px; font-size: 9px; }
+.s-skills .svc-chips .chip { background: var(--gray-100); color: var(--gray-700); border-radius: 20px; padding: 3px 10px; font-size: 12px; }
 .s-skills .note {
   margin-top: auto; background: #fffbec;
   border: 1px solid #f5e8a0; border-radius: 6px;
-  padding: 9px 12px; font-size: 9px; color: var(--gray-700); line-height: 1.5;
+  padding: 9px 12px; font-size: 12px; color: var(--gray-700); line-height: 1.5;
 }
 .s-skills .note span { color: var(--red); font-weight: 700; }
 
 /* ============================================================
    SLIDE 9 — Enter Cloud
-   左侧深色 / 右侧白色，自然过渡回浅色系
    ============================================================ */
-.s-cloud .left { width: 34%; background: #1e2538; flex-shrink: 0; }
-.s-cloud .left h2 { font-size: clamp(33px, 4vw, 56.6px); font-weight: 900; color: #fff; line-height: 1.05; margin-bottom: 8px; }
+.s-cloud .left { width: 34%; background: #0d0d0d; flex-shrink: 0; }   /* ← 黑色 */
+.s-cloud .left h2 { font-size: clamp(33px, 4vw, 57px); font-weight: 900; color: #fff; line-height: 1.05; margin-bottom: 8px; }
 .s-cloud .left h2 .acc { color: var(--red); }
 .s-cloud .left .badge {
   display: inline-block; background: var(--red); border-radius: 4px;
   padding: 3px 10px; margin-bottom: 18px;
-  font-size: 10.4px; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 0.5px;
+  font-size: 11px; font-weight: 700; color: #fff; text-transform: uppercase; letter-spacing: 0.5px;
 }
-.s-cloud .left p { font-size: 13.7px; color: #888; line-height: 1.7; margin-bottom: 18px; }
+.s-cloud .left p { font-size: 14px; color: #aaa; line-height: 1.7; margin-bottom: 18px; }
 .s-cloud .enable-box {
-  background: #252f48; border-left: 2px solid var(--red);
+  background: #1a1a1a; border-left: 2px solid var(--red);   /* ← 深黑，非蓝 */
   border-radius: 0 6px 6px 0; padding: 11px 13px;
 }
 .s-cloud .enable-box h5 { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 4px; }
-.s-cloud .enable-box p { font-size: 11.7px; color: #777; line-height: 1.5; margin: 0; }
+.s-cloud .enable-box p { font-size: 12px; color: #888; line-height: 1.5; margin: 0; }
 .s-cloud .right { background: var(--white); }
 .s-cloud .right-inner { width: 100%; }
-/* 5 个功能均一致样式，3列布局，第2行2个居左 */
 .s-cloud .feat-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 12px;
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 12px;
 }
 .s-cloud .fc {
   background: var(--gray-50); border: 1px solid var(--gray-100);
-  border-radius: 8px; padding: 12px 14px;
-  display: flex; align-items: flex-start; gap: 10px;
+  border-radius: 8px; padding: 12px 14px; display: flex; align-items: flex-start; gap: 10px;
 }
-.s-cloud .fc h4 { font-size: 14.3px; font-weight: 700; color: var(--black); margin-bottom: 3px; }
-.s-cloud .fc p { font-size: 11.7px; color: var(--gray-500); line-height: 1.5; }
-.s-cloud .fc .fi { font-size: 23.4px; flex-shrink: 0; margin-top: 1px; }
-/* 免费启动 — 独立展示，区别于功能列表 */
+.s-cloud .fc h4 { font-size: 14px; font-weight: 700; color: var(--black); margin-bottom: 3px; }
+.s-cloud .fc p { font-size: 13px; color: var(--gray-500); line-height: 1.5; }
+.s-cloud .fc .fi { font-size: 22px; flex-shrink: 0; margin-top: 1px; }
 .s-cloud .free-launch-banner {
   display: flex; align-items: center; gap: 12px;
   background: linear-gradient(135deg, #fffbf5, #fff5f6);
-  border: 1px solid #fde0d0; border-radius: 8px;
-  padding: 11px 16px; margin-bottom: 10px;
+  border: 1px solid #fde0d0; border-radius: 8px; padding: 11px 16px; margin-bottom: 10px;
 }
-.s-cloud .free-launch-banner .free-icon { font-size: 22.4px; flex-shrink: 0; }
-.s-cloud .free-launch-banner strong { font-size: 14.3px; font-weight: 800; color: var(--black); }
+.s-cloud .free-launch-banner .free-icon { font-size: 22px; flex-shrink: 0; }
+.s-cloud .free-launch-banner strong { font-size: 14px; font-weight: 800; color: var(--black); }
 .s-cloud .free-launch-banner span { font-size: 13px; color: var(--gray-500); margin-left: 4px; }
 .s-cloud .agent-bar {
   background: var(--gray-50); border: 1px solid var(--gray-100);
-  border-radius: 8px; padding: 10px 14px;
-  display: flex; align-items: center; gap: 10px;
+  border-radius: 8px; padding: 10px 14px; display: flex; align-items: center; gap: 10px;
 }
-.s-cloud .agent-bar .ai { font-size: 20.8px; }
-.s-cloud .agent-bar p { font-size: 12.3px; color: var(--gray-500); line-height: 1.55; }
+.s-cloud .agent-bar .ai { font-size: 20px; }
+.s-cloud .agent-bar p { font-size: 13px; color: var(--gray-500); line-height: 1.55; }
 .s-cloud .agent-bar p span { color: var(--red); font-weight: 700; }
 
 /* ============================================================
    SLIDE 10 — Integrations
    ============================================================ */
 .s-integrations { background: var(--gray-50); }
-.s-integrations .inner { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 64px 42px 76px; }
+.s-integrations .inner { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 72px 42px 80px; }
 .s-integrations .header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; flex-shrink: 0; }
-.s-integrations .header h2 { font-size: clamp(21.2px, 2.2vw, 28.3px); font-weight: 900; color: var(--black); }
+.s-integrations .header h2 { font-size: clamp(21px, 2.2vw, 28px); font-weight: 900; color: var(--black); }
 .s-integrations .cards { flex: 1; min-height: 0; display: flex; gap: 14px; }
 .s-integrations .cards-col-left { width: 42%; display: flex; flex-direction: column; }
 .s-integrations .cards-col-right { flex: 1; display: flex; flex-direction: column; gap: 14px; }
 .s-integrations .cards-col-left .icard { flex: 1; }
 .s-integrations .cards-col-right .icard { flex: 1; }
 .s-integrations .icard {
-  border-radius: 10px; padding: 22px 20px; display: flex; flex-direction: column; gap: 0;
+  border-radius: 10px; padding: 22px 20px; display: flex; flex-direction: column;
 }
 .s-integrations .icard .icard-body { display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .s-integrations .icard-steps { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
-.s-integrations .step-row { display: flex; align-items: flex-start; gap: 10px; font-size: 12px; color: var(--gray-500); line-height: 1.5; }
+.s-integrations .step-row { display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--gray-500); line-height: 1.5; }
 .s-integrations .step-row strong { color: var(--black); }
-.s-integrations .step-num { flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; background: rgba(232,52,78,0.1); color: var(--red); font-size: 10px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
-.s-integrations .icard.dark { background: #13131a; }
-.s-integrations .icard.white { background: var(--white); border: 1px solid var(--gray-100); }
+.s-integrations .step-num { flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; background: rgba(232,52,78,0.1); color: var(--red); font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
 .s-integrations .icard.accent { background: #fff8f8; border: 1.5px solid rgba(232,52,78,0.15); }
+.s-integrations .icard.white { background: var(--white); border: 1px solid var(--gray-100); }
 .s-integrations .icard .stripe { height: 3px; background: var(--red); border-radius: 2px; margin-bottom: 16px; }
 .s-integrations .icard-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
-.s-integrations .icard h3 { font-size: 18.2px; font-weight: 900; line-height: 1.2; }
-.s-integrations .icard.dark h3 { color: #fff; }
-.s-integrations .icard.white h3 { color: var(--black); }
-.s-integrations .icard.accent h3 { color: var(--black); }
-.s-integrations .icard p.desc { font-size: 12.3px; line-height: 1.6; margin-bottom: 12px; }
-.s-integrations .icard.dark p.desc { color: #999; }
-.s-integrations .icard.white p.desc { color: var(--gray-500); }
-.s-integrations .icard.accent p.desc { color: var(--gray-500); }
+.s-integrations .icard h3 { font-size: 18px; font-weight: 900; line-height: 1.2; color: var(--black); }
+.s-integrations .icard p.desc { font-size: 14px; line-height: 1.65; margin-bottom: 12px; color: var(--gray-500); }
 .s-integrations .icard-list { list-style: none; padding: 0; margin: 0 0 8px; display: flex; flex-direction: column; gap: 7px; }
-.s-integrations .icard-list li { font-size: 12px; line-height: 1.5; padding-left: 14px; position: relative; color: var(--gray-500); }
+.s-integrations .icard-list li { font-size: 13px; line-height: 1.5; padding-left: 14px; position: relative; color: var(--gray-500); }
 .s-integrations .icard-list li::before { content: "·"; position: absolute; left: 0; color: var(--red); font-weight: 900; font-size: 16px; line-height: 1; top: 1px; }
-.s-integrations .icard.dark .icard-list li { color: #888; }
-.s-integrations .icard.dark .icard-list li::before { color: var(--red); }
-.s-integrations .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: auto; }
+.s-integrations .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: auto; padding-top: 12px; }
+
+/* chips — 通用 */
+.chip { background: var(--gray-100); color: var(--gray-700); border-radius: 20px; padding: 3px 10px; font-size: 12px; font-weight: 600; }
+.chip.red { background: var(--red); color: #fff; }
+.chip.accent { background: rgba(232,52,78,0.1); color: var(--red); border: 1px solid rgba(232,52,78,0.2); }
+
+/* icon-circle — 通用 */
+.icon-circle { width: 34px; height: 34px; border-radius: 50%; background: var(--gray-100); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.icon-circle.red { background: var(--red); color: #fff; }
+.icon-circle.light { background: rgba(255,255,255,0.15); }
+
+/* num-badge — 通用 */
+.num-badge { width: 22px; height: 22px; border-radius: 50%; background: var(--red); color: #fff; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 
 /* ============================================================
    SLIDE 11 — Templates & Models
    ============================================================ */
-.s-templates .left { width: 42%; border-right: 1px solid var(--gray-100); flex-shrink: 0; }
-.s-templates .left h2 { font-size: clamp(23.6px, 2.5vw, 35.4px); font-weight: 900; color: var(--black); margin-bottom: 12px; }
-.s-templates .left p { font-size: 13px; color: var(--gray-500); line-height: 1.65; margin-bottom: 14px; }
-.s-templates .tpl-tags { display: flex; flex-wrap: wrap; gap: 5px; }
-.s-templates .right h3 { font-size: 20.8px; font-weight: 900; color: var(--black); margin-bottom: 16px; }
-.s-templates .model-row { display: flex; align-items: center; gap: 10px; margin-bottom: 9px; }
-.s-templates .model-name { width: 130px; flex-shrink: 0; font-size: 13px; font-weight: 700; color: var(--black); }
+.s-templates .left { width: 42%; flex-shrink: 0; }
+.s-templates .left h2 { font-size: clamp(24px, 2.5vw, 35px); font-weight: 900; color: var(--black); margin-bottom: 12px; line-height: 1.1; }
+.s-templates .left p { font-size: 14px; color: var(--gray-500); line-height: 1.65; margin-bottom: 14px; }
+.s-templates .tpl-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.s-templates .right h3 { font-size: 17px; font-weight: 900; color: var(--black); margin-bottom: 16px; }
+.s-templates .model-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.s-templates .model-name { width: 140px; flex-shrink: 0; font-size: 13px; font-weight: 700; color: var(--black); }
 .s-templates .model-bar-bg { flex: 1; height: 5px; background: var(--gray-100); border-radius: 3px; overflow: hidden; }
 .s-templates .model-bar { height: 100%; background: var(--red); border-radius: 3px; }
-.s-templates .model-type { width: 50px; flex-shrink: 0; font-size: 10.4px; color: var(--gray-500); text-align: right; }
+.s-templates .model-type { width: 54px; flex-shrink: 0; font-size: 11px; color: var(--gray-500); text-align: right; }
 
 /* ============================================================
-   SLIDE 12 — Credits & Membership  (白色主调)
+   SLIDE 12 — Credits & Membership
    ============================================================ */
 .s-credits { background: var(--white); }
-.s-credits .left { width: 38%; border-right: 1px solid var(--gray-100); flex-shrink: 0; }
-.s-credits .left h2 { font-size: clamp(28.3px, 3.5vw, 47.2px); font-weight: 900; color: var(--black); line-height: 1.1; margin-bottom: 18px; }
-.s-credits .credit-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
-.s-credits .ci-icon { width: 22px; height: 22px; background: var(--red); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 14.3px; flex-shrink: 0; }
-.s-credits .ci-body h4 { font-size: 13.7px; font-weight: 700; color: var(--black); margin-bottom: 2px; }
-.s-credits .ci-body p { font-size: 11.7px; color: var(--gray-500); }
-.s-credits .right h3 { font-size: 20.8px; font-weight: 900; color: var(--black); margin-bottom: 18px; }
+.s-credits .left { width: 38%; flex-shrink: 0; }
+.s-credits .left h2 { font-size: clamp(28px, 3.5vw, 47px); font-weight: 900; color: var(--black); line-height: 1.1; margin-bottom: 18px; }
+.s-credits .credit-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px; }
+.s-credits .ci-icon { width: 24px; height: 24px; background: var(--red); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+.s-credits .ci-body h4 { font-size: 15px; font-weight: 700; color: var(--black); margin-bottom: 3px; }
+.s-credits .ci-body p { font-size: 13px; color: var(--gray-500); }
+.s-credits .right h3 { font-size: 17px; font-weight: 900; color: var(--black); margin-bottom: 18px; }
 .s-credits .balance {
   background: var(--gray-50); border-radius: 8px; padding: 16px 18px; margin-bottom: 16px;
   border: 1px solid var(--gray-100);
 }
-.s-credits .balance .hint { font-size: 11.1px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-.s-credits .balance .amount { font-size: 35.8px; font-weight: 900; color: var(--red); line-height: 1; }
-.s-credits .balance .unit { font-size: 12.3px; color: var(--gray-500); margin-top: 3px; }
+.s-credits .balance .hint { font-size: 12px; color: var(--gray-500); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.s-credits .balance .amount { font-size: 36px; font-weight: 900; color: var(--red); line-height: 1; }
+.s-credits .balance .unit { font-size: 13px; color: var(--gray-500); margin-top: 3px; }
 .s-credits .plan-box {
   background: var(--gray-50); border: 1px solid var(--gray-100); border-radius: 7px;
-  padding: 11px 14px; display: flex; align-items: center; gap: 10px;
+  padding: 12px 16px; display: flex; align-items: center; gap: 12px;
 }
-.s-credits .plan-box h4 { font-size: 14.3px; font-weight: 700; color: var(--black); margin-bottom: 2px; }
-.s-credits .plan-box p { font-size: 11.7px; color: var(--gray-500); }
+.s-credits .plan-box h4 { font-size: 15px; font-weight: 700; color: var(--black); margin-bottom: 3px; }
+.s-credits .plan-box p { font-size: 13px; color: var(--gray-500); }
 
 /* ============================================================
    SLIDE 13 — Tips & Best Practices
    ============================================================ */
 .s-tips { background: var(--gray-50); }
-.s-tips .inner { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 64px 42px 76px; overflow: hidden; }
-.s-tips .header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 14px; flex-shrink: 0; }
-.s-tips .header h2 { font-size: clamp(21.2px, 2.2vw, 28.3px); font-weight: 900; color: var(--black); }
-.s-tips .grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, auto); gap: 12px; flex-shrink: 0; }
-.s-tips .tips-spacer { flex: 1; min-height: 12px; }
-.s-tips .tip-card { border-radius: 8px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; }
+.s-tips .inner { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 72px 42px 80px; }
+.s-tips .header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 16px; flex-shrink: 0; }
+.s-tips .header h2 { font-size: clamp(21px, 2.2vw, 28px); font-weight: 900; color: var(--black); }
+.s-tips .grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr);
+  gap: 12px; flex: 1; min-height: 0;
+}
+.s-tips .tips-spacer { display: none; }   /* grid 已 flex:1，不需要 spacer */
+.s-tips .tip-card { border-radius: 8px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; }
 .s-tips .tip-card.light { background: var(--white); border: 1px solid var(--gray-100); }
-.s-tips .tip-card.dark { background: #13131a; }
 .s-tips .tip-card.accent { background: #fff8f8; border: 1.5px solid rgba(232,52,78,0.15); }
 .s-tips .tip-top { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-.s-tips .tip-emoji { font-size: 20px; flex-shrink: 0; }
-.s-tips .tip-card h4 { font-size: 13.5px; font-weight: 700; line-height: 1.2; }
-.s-tips .tip-card.light h4 { color: var(--black); }
-.s-tips .tip-card.dark h4 { color: #fff; }
-.s-tips .tip-card.accent h4 { color: var(--black); }
-.s-tips .tip-card p { font-size: 11.5px; color: var(--gray-500); line-height: 1.6; margin: 0; }
-.s-tips .tip-card.dark p { color: #888; }
-.s-tips .tip-hl { background: #fff0f1; border-radius: 3px; padding: 3px 8px; font-size: 10px; color: var(--red); font-weight: 700; display: inline-block; align-self: flex-start; }
-.s-tips .tip-card.dark .tip-hl { background: #1a1a1a; }
-.s-tips .tip-link { font-size: 11px; color: var(--red); font-weight: 600; text-decoration: none; align-self: flex-start; padding: 2px 0; border-bottom: 1px solid rgba(232,52,78,0.3); }
-.s-tips .bottom-bar { flex-shrink: 0; background: var(--white); border: 1px solid var(--gray-100); border-radius: 8px; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-.s-tips .bottom-bar .bb-text { font-size: 12px; color: var(--gray-500); line-height: 1.5; }
+.s-tips .tip-emoji { font-size: 22px; flex-shrink: 0; }
+.s-tips .tip-card h4 { font-size: 15px; font-weight: 700; line-height: 1.2; color: var(--black); }
+.s-tips .tip-card p { font-size: 13px; color: var(--gray-500); line-height: 1.65; margin: 0; }
+.s-tips .tip-hl { background: #fff0f1; border-radius: 3px; padding: 3px 8px; font-size: 11px; color: var(--red); font-weight: 700; display: inline-block; align-self: flex-start; }
+.s-tips .bottom-bar {
+  flex-shrink: 0; margin-top: 12px;
+  background: var(--white); border: 1px solid var(--gray-100); border-radius: 8px;
+  padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px;
+}
+.s-tips .bottom-bar .bb-text { font-size: 13px; color: var(--gray-500); line-height: 1.5; }
 .s-tips .bottom-bar .bb-text strong { color: var(--black); }
-.s-tips .bottom-bar .bb-link { font-size: 11px; font-weight: 700; color: var(--red); text-decoration: none; white-space: nowrap; padding: 6px 14px; border: 1.5px solid var(--red); border-radius: 6px; transition: all 0.2s; flex-shrink: 0; }
+.s-tips .bottom-bar .bb-link {
+  font-size: 12px; font-weight: 700; color: var(--red); text-decoration: none;
+  white-space: nowrap; padding: 6px 14px; border: 1.5px solid var(--red);
+  border-radius: 6px; transition: all 0.2s; flex-shrink: 0;
+}
 .s-tips .bottom-bar .bb-link:hover { background: var(--red); color: #fff; }
 
 /* ============================================================
    SLIDE 14 — Contact
    ============================================================ */
 .s-contact { background: var(--white); }
-.s-contact .left { width: 38%; border-right: 1px solid var(--gray-100); flex-shrink: 0; }
-.s-contact .left h2 { font-size: clamp(37.8px, 5vw, 66.1px); font-weight: 900; color: var(--black); line-height: 1; margin-bottom: 10px; }
+.s-contact .left { width: 38%; flex-shrink: 0; }
+.s-contact .left h2 { font-size: clamp(38px, 5vw, 66px); font-weight: 900; color: var(--black); line-height: 1; margin-bottom: 10px; }
 .s-contact .left h2 .acc { color: var(--red); }
-.s-contact .left .tagline { font-size: 15.6px; color: var(--gray-500); font-style: italic; line-height: 1.6; margin-bottom: 28px; }
+.s-contact .left .tagline { font-size: 16px; color: var(--gray-500); font-style: italic; line-height: 1.6; margin-bottom: 28px; }
 .s-contact .cta {
   display: inline-flex; align-items: center; gap: 10px;
   background: var(--red); border-radius: 8px; padding: 12px 20px;
   cursor: pointer; transition: background 0.2s;
 }
 .s-contact .cta:hover { background: #c9283f; }
-.s-contact .cta span { font-size: 15.6px; font-weight: 700; color: #fff; }
-.s-contact .cta .arr { font-size: 18.2px; color: rgba(255,255,255,0.7); }
-.s-contact .cta:hover .arr { color: #fff; }  /* hover keeps white */
+.s-contact .cta span { font-size: 16px; font-weight: 700; color: #fff; }
+.s-contact .cta .arr { font-size: 18px; color: rgba(255,255,255,0.7); }
+.s-contact .cta:hover .arr { color: #fff; }
 .s-contact .right h3 { font-size: 13px; color: var(--gray-300); letter-spacing: 2px; font-weight: 700; text-transform: uppercase; margin-bottom: 22px; }
 .s-contact .link-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-.s-contact .link-icon { width: 30px; height: 30px; background: var(--gray-50); border-radius: 7px; display: flex; align-items: center; justify-content: center; font-size: 18.2px; flex-shrink: 0; }
-.s-contact .link-info .lt { font-size: 11.1px; color: var(--gray-300); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1px; }
-.s-contact .link-info .lv { font-size: 14.3px; font-weight: 700; color: var(--black); }
+.s-contact .link-icon { width: 30px; height: 30px; background: var(--gray-50); border-radius: 7px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.s-contact .link-info .lt { font-size: 11px; color: var(--gray-300); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1px; }
+.s-contact .link-info .lv { font-size: 14px; font-weight: 700; color: var(--black); }
 .s-contact .wechat-note {
-  margin-top: 18px; background: var(--gray-50); border-radius: 6px; padding: 9px 12px;
-  font-size: 11.1px; color: var(--gray-500);
+  margin-top: 18px; background: var(--gray-50); border-radius: 6px; padding: 10px 14px;
+  font-size: 13px; color: var(--gray-500);
 }
 .s-contact .wechat-note span { color: var(--red); font-weight: 700; }
 
@@ -427,38 +414,26 @@
 /* ============================================================
    Text Selection
    ============================================================ */
-/* Allow text selection inside slides */
 .slide { user-select: text; -webkit-user-select: text; }
-/* Keep UI controls unselectable */
-#header, #controls, #progress-bar, #overview { 
-  user-select: none; -webkit-user-select: none; 
+#header, #controls, #progress-bar, #overview {
+  user-select: none; -webkit-user-select: none;
 }
 
 /* ============================================================
-   External Links Styling
+   Link styles
    ============================================================ */
-/* Slide 2 — social link items */
 a.link-item {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none; color: inherit;
   display: flex; align-items: center; gap: 8px;
   transition: color 0.2s, transform 0.15s;
 }
-a.link-item:hover {
-  color: var(--red);
-  transform: translateX(3px);
-}
+a.link-item:hover { color: var(--red); transform: translateX(3px); }
 
-/* Slide 14 — contact link rows */
 a.link-row {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none; color: inherit;
   display: flex; align-items: center; gap: 12px;
-  border-radius: 6px;
-  padding: 4px 6px;
-  margin: -4px -6px;
-  transition: background 0.2s;
-  cursor: pointer;
+  border-radius: 6px; padding: 4px 6px; margin: -4px -6px;
+  transition: background 0.2s; cursor: pointer;
 }
 a.link-row:hover { background: var(--gray-50); }
 a.link-row:hover .lv { color: var(--red); }

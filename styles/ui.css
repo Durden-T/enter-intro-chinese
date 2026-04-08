@@ -231,11 +231,12 @@ ul { list-style: none; }
 }
 .s-col-left {
   display: flex; flex-direction: column; justify-content: center;
-  padding: 60px 44px;
+  /* top:72px clears fixed header(~52px)；bottom:80px clears controls bar(~66px) */
+  padding: 72px 44px 80px;
 }
 .s-col-right {
   flex: 1; display: flex; flex-direction: column; justify-content: center;
-  padding: 48px 44px;
+  padding: 68px 44px 80px;
   overflow: hidden;
 }
 
